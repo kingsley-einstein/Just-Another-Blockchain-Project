@@ -3,6 +3,7 @@ package com.just.another.blockchain.project.core;
 import java.math.BigInteger;
 
 public class Address implements java.io.Serializable {
+
   private String asHex;
   private BigInteger asBigInteger;
 
