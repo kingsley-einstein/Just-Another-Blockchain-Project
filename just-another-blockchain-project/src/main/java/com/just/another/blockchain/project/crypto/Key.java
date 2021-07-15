@@ -13,4 +13,8 @@ public abstract class Key {
     this.entropy = entropy;
     this.asBigInteger = new BigInteger(this.value, radix);
   }
+
+  protected Key(String value, int radix) {
+    this(value, null, radix);
+  }
 }

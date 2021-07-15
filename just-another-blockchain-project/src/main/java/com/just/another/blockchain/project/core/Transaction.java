@@ -1,10 +1,10 @@
 package com.just.another.blockchain.project.core;
 
-public class Transaction {
+public class Transaction implements java.io.Serializable {
 
-  Address sender;
-  Address recipient;
-  TransactionValue amount;
-  Long timestamp;
-  Boolean isCoinBase;
+  public Address sender;
+  public Address recipient;
+  public TransactionValue amount;
+  public Long timestamp;
+  public Boolean isCoinBase;
 }

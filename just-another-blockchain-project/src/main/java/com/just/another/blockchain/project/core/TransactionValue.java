@@ -4,8 +4,8 @@ import java.math.BigInteger;
 
 public class TransactionValue implements java.io.Serializable {
 
-  BigInteger actualValue;
-  String hexValue;
+  public BigInteger actualValue;
+  public String hexValue;
 
   public TransactionValue() {}
 
