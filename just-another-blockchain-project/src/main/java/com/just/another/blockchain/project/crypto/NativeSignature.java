@@ -1,5 +1,6 @@
 package com.just.another.blockchain.project.crypto;
 
+import com.just.another.blockchain.project.constants.Constants;
 import com.just.another.blockchain.project.core.Transaction;
 import java.math.BigInteger;
 import java.security.InvalidKeyException;
@@ -15,9 +16,9 @@ import org.bouncycastle.jce.spec.ECPrivateKeySpec;
 public class NativeSignature implements java.io.Serializable {
 
   public String value;
-  public String key_factory_algorithm = "EC";
-  public String ec_named_curve = "secp256r1";
-  public String signing_algorithm = "SHA256withDSA";
+  public String key_factory_algorithm = Constants.KEY_FACTORY_ALGORITHM;
+  public String ec_named_curve = Constants.EC_NAMED_CURVE;
+  public String signing_algorithm = Constants.SIGNING_ALGORITHM;
 
   public NativeSignature() {
     // Empty for JSON serialization

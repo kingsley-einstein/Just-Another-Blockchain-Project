@@ -5,6 +5,7 @@ import com.just.another.blockchain.project.crypto.NativeSignature;
 import com.just.another.blockchain.project.crypto.PrivateKey;
 
 public class NativeSignatureBuilder {
+
   private PrivateKey key;
   private Transaction transaction;
 
